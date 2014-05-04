@@ -19,10 +19,9 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- spec/*`.split("\n")
   s.require_path = 'lib'
-  s.requirements << 'none'
+  s.requirements << "gem 'tinymce-rails', '~> 4.0.16'\nor\ngem 'ckeditor', '4.0.6'"
 
   s.add_dependency 'spree_backend', '~> 2.3.0.beta'
-  spec.requirements << "gem 'tinymce-rails', '~> 4.0.16'\nor\ngem 'ckeditor', '4.0.6'"
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'i18n-spec', '~> 0.4.0'
